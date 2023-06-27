@@ -1,0 +1,185 @@
+.navBack {
+  background-color: var(--secondary);
+  color: var(--textWhite);
+  height: 4.8rem;
+  font-size: 2.4rem;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--textWhite);
+}
+.logo img {
+  height: 16rem;
+  margin-top: 16rem;
+}
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 14%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  z-index: 3;
+}
+.logo:hover {
+  transform: translate(-50%, -50%) scale(1.03);
+  filter: drop-shadow(3px 3px 4px var(--darkPrimary));
+}
+.responsiveNav {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 5rem 0 5rem 0;
+  font-size: 3rem;
+  background-color: var(--darkPrimary);
+  transition: 1s;
+  transform: translateY(-100vh);
+  z-index: 4;
+  border: 5px solid var(--secondary);
+}
+.navContainer1 {
+  display: inline-flex;
+  gap: 6rem;
+  padding-left: 2.4rem;
+  align-items: center;
+}
+.navContainer2 {
+  display: inline-flex;
+  gap: 8.5rem;
+  padding-right: 2.4rem;
+  align-items: center;
+}
+.signOut {
+  cursor: pointer;
+}
+.hiddenMenuBtn {
+  display: none;
+}
+.cartContainer {
+  height: 3rem;
+  position: relative;
+}
+.cart {
+  font-size: 5rem;
+  padding-bottom: 1.5rem;
+  cursor: pointer;
+}
+.cartCount {
+  color: var(--textWhite);
+  position: absolute;
+  z-index: 1;
+}
+
+@media (max-width: 1250px) {
+  .navBack {
+    font-size: 1.6rem;
+  }
+  .logo img {
+    height: 12rem;
+    margin-top: 12rem;
+  }
+}
+@media (max-width: 950px) {
+  .navContainer1 {
+    gap: 3rem;
+    padding-left: 2.4rem;
+    align-items: center;
+  }
+  .navContainer2 {
+    gap: 3rem;
+    padding-right: 1.6rem;
+    align-items: center;
+  }
+  .logo img {
+    height: 10rem;
+    margin-top: 12rem;
+  }
+}
+@media (max-width: 800px) {
+  .navContainer2,
+  .navContainer1 {
+    gap: 5rem;
+    padding-left: 2.4rem;
+  }
+
+  .login,
+  .signOut {
+    position: absolute;
+    margin-top: 0.5rem;
+    top: 120%;
+    right: 5%;
+  }
+
+  .user {
+    position: absolute;
+    margin-top: 0.5rem;
+    top: 120%;
+    left: 5%;
+  }
+  .logo img {
+    height: 9rem;
+    margin-top: 12rem;
+  }
+}
+@media (max-width: 650px) {
+  .navAction {
+    display: flex;
+    animation: navDrop 1s ease-out;
+  }
+  .navClose {
+    transform: translateY(-200%);
+    display: flex;
+    transition: 0.5s;
+  }
+  .hiddenMenuBtn {
+    display: inline-block;
+    font-size: 2.4rem;
+    cursor: pointer;
+  }
+  .escape {
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+    cursor: pointer;
+  }
+  .escape:hover {
+    color: var(--secondary);
+  }
+  .linkHide {
+    display: none;
+  }
+  .navContainer2 {
+    gap: 1.6rem;
+    padding-right: 1.7rem;
+  }
+  .responsiveNav a:hover {
+    color: var(--secondary);
+  }
+  .logo img {
+    margin-top: 8rem;
+  }
+}
+@keyframes navDrop {
+  0% {
+    transform: translateY(-200%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}

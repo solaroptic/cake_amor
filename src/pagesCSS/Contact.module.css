@@ -1,0 +1,68 @@
+.contactBack {
+  background-image: url(../assets/cakeDesktopMock.jpg);
+  width: 100vw;
+  height: calc(100% - 14.8rem);
+  position: fixed;
+  top: 4.8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--textWhite);
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.contactTitle {
+  text-align: center;
+}
+.contactContainer {
+  background-color: var(--mainTrans);
+  width: 55%;
+  height: 100%;
+  margin: 0 auto 0 auto;
+  padding-top: 8rem;
+  text-align: center;
+  position: relative;
+}
+.contactContainer section {
+  width: 100%;
+  position: static;
+  bottom: 2%;
+}
+@media (max-width: 1200px) {
+  .contactContainer section {
+    bottom: 1%;
+  }
+  .contactContainer {
+    width: 70%;
+    padding-top: 6rem;
+  }
+}
+@media (max-width: 900px) {
+  .contactContainer section p {
+    font-size: 2.6rem;
+  }
+  .contactContainer {
+    width: 78%;
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 650px) {
+  .contactBack {
+    height: calc(100% - 13.8rem);
+  }
+  .contactContainer section p {
+    font-size: 2.2rem;
+    margin: 1rem 0;
+  }
+  .contactContainer {
+    width: 100%;
+  }
+  .contactContainer section {
+    padding-top: 3rem;
+  }
+}

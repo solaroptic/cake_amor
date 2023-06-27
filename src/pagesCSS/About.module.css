@@ -1,0 +1,60 @@
+.aboutBack {
+  background-image: url(../assets/cakeDesktopMock.jpg);
+  width: 100vw;
+  height: calc(100% - 14.8rem);
+  position: fixed;
+  top: 4.8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--textWhite);
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.aboutText {
+  width: 67%;
+  margin: 0 auto 1rem auto;
+  /* text-shadow: 2px 1px 2px black; */
+}
+.aboutTitle {
+  padding-top: 10rem;
+  text-align: center;
+}
+.aboutContainer {
+  background-color: var(--mainTrans);
+  width: 55%;
+  margin: 0 auto 0 auto;
+  /* border-radius: 12%; */
+  text-align: left;
+}
+.aboutContainer h4 {
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .aboutContainer {
+    width: 80%;
+  }
+  .aboutText {
+    width: 75%;
+  }
+}
+
+@media (max-width: 650px) {
+  .aboutBack {
+    height: calc(100% - 13.8rem);
+  }
+  .aboutContainer {
+    width: 100%;
+  }
+  .aboutText {
+    width: 85%;
+  }
+  .aboutTitle {
+    padding-top: 3rem;
+    text-align: center;
+  }
+}

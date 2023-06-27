@@ -1,0 +1,132 @@
+.homeBack {
+  background-image: url(../assets/cakeDesktopMock.jpg);
+  width: 100vw;
+  height: calc(100% - 14.8rem);
+  position: relative;
+  top: 4.8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.homeBack h1 {
+  font-size: 10rem;
+  padding: 3rem 0 0 3rem;
+  color: var(--textWhite);
+  text-shadow: 3px 3px 3px var(--darkPrimary);
+  z-index: 2;
+}
+.slideShow {
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.ad {
+  position: absolute;
+  bottom: 5%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  align-items: baseline;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 2;
+}
+.ad span {
+  color: var(--textWhite);
+  font-size: 2.6rem;
+}
+.bubbles {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  margin-top: -50%;
+}
+.bubbles span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: var(--primary);
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #57b9bc44, 0 0 50px var(--primary),
+    0 0 100px var(--primary);
+  animation: rain 15s linear infinite;
+  animation-duration: calc(110s / var(--i));
+}
+.bubbles span:nth-child(even) {
+  background: var(--secondary);
+  box-shadow: 0 0 0 10px #ff797544, 0 0 50px var(--secondary),
+    0 0 100px var(--secondary);
+}
+@keyframes rain {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(50vh) scale(0.8);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-10vh) scale(0.3);
+    opacity: 0.9;
+  }
+}
+@media (max-width: 1200px) {
+  .homeBack h1 {
+    font-size: 7rem;
+    padding: 3rem 0 0 3rem;
+    color: var(--textWhite);
+    text-shadow: 3px 3px 3px var(--darkPrimary);
+    margin-bottom: 3rem;
+  }
+  .ad span {
+    font-size: 2rem;
+  }
+  .slideShow {
+    height: 80%;
+  }
+}
+@media (max-width: 910px) {
+  .ad {
+    width: 60%;
+    bottom: 3%;
+  }
+  .homeBack h1 {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .homeBack {
+    background-image: url(../assets/cakeDesktopMock.jpg);
+    height: calc(100% - 13.8rem);
+    position: relative;
+    top: 4.8rem;
+
+    overflow: hidden;
+  }
+  .bubbles span {
+    width: 20px;
+    bottom: -15%;
+    height: 10px;
+    margin-top: -90%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .homeBack h1 {
+    font-size: 6rem;
+    margin: 4rem 0 7rem 0;
+    text-align: center;
+    padding: 0;
+  }
+  .ad {
+    flex-direction: column;
+    align-items: center;
+    bottom: 8.5%;
+    width: 90%;
+  }
+}

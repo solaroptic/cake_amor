@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+:root {
+  --primary: #57b9bc;
+  --darkPrimary: #469496;
+  --secondary: #ff7975;
+  --secondaryAlt: #f27a86;
+  --mainTrans: rgba(87, 185, 188, 0.8);
+  --mainTransLess: rgba(87, 185, 188, 0.85);
+  --textWhite: rgb(245, 246, 248);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  /* padding: 2rem 3rem; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+img {
+  max-height: 600px;
+}

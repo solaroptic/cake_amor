@@ -1,0 +1,44 @@
+.termsBack {
+  background-image: url(../assets/cakeDesktopMock.jpg);
+  width: 100vw;
+  height: calc(100% - 13.8rem);
+  position: fixed;
+  top: 4.8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.termsText {
+  text-align: left;
+  width: 74%;
+  margin: 0 auto 1rem auto;
+  font-size: 1.6rem;
+  /* text-shadow: 2px 1px 2px black; */
+}
+.termsTitle {
+  padding-top: 10rem;
+}
+.termsContainer {
+  background-color: var(--mainTrans);
+  width: 55%;
+  margin: 0 auto 0 auto;
+}
+
+.termsContainer h4 {
+  margin-bottom: 0.6rem;
+}
+
+@media (max-width: 650px) {
+  .termsContainer {
+    width: 100%;
+  }
+  .termsTitle {
+    padding-top: 4rem;
+  }
+}

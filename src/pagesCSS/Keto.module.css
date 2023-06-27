@@ -1,0 +1,102 @@
+.ketoBack {
+  background-image: url(../assets/cakeDesktopMock.jpg);
+  width: 100vw;
+  height: calc(100% - 14.8rem);
+  position: fixed;
+  top: 4.8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  text-align: center;
+}
+.ketoBack h2 {
+  font-size: 5rem;
+  margin: 8rem 0 0 2rem;
+  text-align: left;
+  color: var(--textWhite);
+  text-shadow: 2px 2px 2px black;
+}
+.ketoGrid {
+  display: grid;
+  margin-top: 5%;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  row-gap: 2rem;
+  padding-bottom: 0.5rem;
+}
+.ketoCard {
+  background-color: var(--mainTransLess);
+  /* 469496 57b9bc ff7975*/
+  border-radius: 12%;
+  width: 77%;
+  height: 100%;
+  justify-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid var(--secondary);
+  color: var(--textWhite);
+  /* text-shadow: 2px 1px 1px black; */
+}
+.ketoCard img {
+  max-height: 200px;
+}
+.description {
+  width: 90%;
+  text-align: left;
+  font-size: 1.8rem;
+}
+.ketoPrice {
+  font-size: 2.4rem;
+}
+.name {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+.ketoImage {
+  border-radius: 10%;
+  border: 2px solid var(--secondary);
+}
+.priceAndBtn {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  /* gap: 9rem; */
+  /* flex-shrink: 1; */
+}
+.plus {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.plus:hover {
+  color: var(--secondary);
+  transform: scale(1.3);
+  filter: drop-shadow(5px 5px 3px rgba(53, 120, 122, 0.85));
+}
+@media (max-width: 1200px) {
+  .ketoBack h2 {
+    font-size: 5rem;
+    margin: 6rem 0 0 2rem;
+  }
+}
+@media (max-width: 850px) {
+  .ketoBack h2 {
+    font-size: 4rem;
+    margin: 4rem 0 0 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .ketoBack {
+    height: calc(100vh - 13.8rem);
+  }
+}

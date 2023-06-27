@@ -1,0 +1,81 @@
+.menuPageContainer {
+  background-image: url(../assets/cakeDesktopMock.jpg);
+  width: 100vw;
+  height: calc(100% - 14.8rem);
+  position: fixed;
+  top: 4.8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.menuPageContainer h1 {
+  color: var(--textWhite);
+  font-size: 7rem;
+  text-shadow: 2px 2px 2px var(--darkPrimary);
+  padding: 3rem 0 0 2rem;
+}
+.menuImg {
+  max-height: 200px;
+}
+.menuContainer {
+  margin-top: 6.5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+  row-gap: 4rem;
+  /* grid-template-columns: repeat(3, 1fr); */
+}
+.menuItem {
+  cursor: pointer;
+  background-color: var(--primary);
+  padding: 2rem;
+  border-radius: 12%;
+  font-size: 2.8rem;
+  color: var(--textWhite);
+  text-align: center;
+  border: 3px solid var(--secondary);
+}
+.menuItem img {
+  border-radius: 9%;
+}
+
+@media (max-width: 1200px) {
+  .menuPageContainer h1 {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .menuPageContainer {
+    background-image: url(../assets/cakeMOBILEmockup.jpg);
+    width: 100vw;
+    height: calc(100% - 13.8rem);
+  }
+  .menuPageContainer h1 {
+    font-size: 5.5rem;
+    text-align: center;
+    padding: 3rem 0 0 0;
+  }
+}
+@media (max-width: 500px) {
+  .menuPageContainer h1 {
+    font-size: 4rem;
+  }
+  .menuContainer {
+    margin-top: 6.5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    justify-items: space-between;
+    row-gap: 4rem;
+  }
+  .menuItem {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .menuImg {
+    max-height: 138px;
+  }
+}

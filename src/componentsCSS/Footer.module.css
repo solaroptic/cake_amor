@@ -1,0 +1,94 @@
+.footerContainer {
+  position: fixed;
+  bottom: 0%;
+  width: 100vw;
+  height: 10rem;
+  background-color: var(--secondary);
+}
+.footerBack1 {
+  color: var(--textWhite);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  height: auto;
+}
+.clock {
+  font-size: 2.4rem;
+}
+.footerBack2 {
+  height: auto;
+}
+
+a.footerLinks:link,
+a.footerLinks:visited,
+a.footerLinks:hover,
+a.footerLinks:active {
+  text-decoration: none;
+  color: var(--textWhite);
+  font-size: 2.4rem;
+}
+.footerLinkContainer {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+.socialContainer {
+  padding-top: 0.3%;
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+.footerLinkContainerAlt {
+  display: none;
+}
+@media (max-width: 950px) {
+  .footerBack1,
+  .footerBack2 {
+    font-size: 2rem;
+  }
+  a.footerLinks:link,
+  a.footerLinks:visited,
+  a.footerLinks:hover,
+  a.footerLinks:active {
+    font-size: 2rem;
+  }
+  .socialContainer {
+    margin-top: 0.5rem;
+    gap: 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  .footerContainer {
+    height: 9rem;
+  }
+  .footerLinkContainerAlt {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+  }
+  .footerLinkContainer {
+    display: none;
+  }
+  .footerBack1 {
+    font-size: 1.6rem;
+  }
+  .socialContainer {
+    gap: 7%;
+  }
+}
+@media (max-width: 440px) {
+  .footerBack1 {
+    font-size: 1.2rem;
+    gap: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .clock {
+    font-size: 1.5rem;
+  }
+  .footerLinkContainerAlt {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+}

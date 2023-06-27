@@ -1,0 +1,134 @@
+.orderPageContainer {
+  background-image: url(../assets/cakeDesktopMock.jpg);
+  width: 100vw;
+  height: calc(100% - 14.8rem);
+  position: fixed;
+  top: 4.8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+.orderPageContainer h1 {
+  color: var(--textWhite);
+  text-shadow: 2px 2px 2px var(--darkPrimary);
+  font-size: 5rem;
+  margin: 3rem 0 0 2rem;
+}
+.orderBox {
+  display: flex;
+  margin: 7rem auto 0 auto;
+  width: 75%;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--textWhite);
+}
+.orderItemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  /* background-color: var(--darkPrimary); */
+  margin-bottom: 20px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.sectionInfo {
+  background-color: var(--darkPrimary);
+  padding: 1rem;
+  border: 2px solid var(--textWhite);
+  border-radius: 10px;
+  width: 70%;
+}
+.sectionInfo div p {
+  font-size: 1.8rem;
+  margin: 1rem 0 0.6rem 0;
+}
+.sectionInfo div h3 {
+  font-size: 2.4rem;
+  /* margin: 1rem 0 0.6rem 0; */
+}
+.sectionAction {
+  background-color: var(--darkPrimary);
+  padding: 1rem;
+  border: 2px solid var(--textWhite);
+  border-radius: 10px;
+  width: 20%;
+}
+.sectionAction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 2.4rem;
+}
+.sectionActionIssue {
+  background-color: #ce5446;
+}
+.sectionActionReady {
+  background-color: var(--primary);
+}
+.sectionAction div {
+  align-self: center;
+  cursor: pointer;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+}
+.cakeDetails {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.notes {
+  text-align: center;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  .sectionInfo {
+    width: 82%;
+  }
+  .orderItemContainer {
+    padding: 0.8rem;
+    column-gap: 2.6rem;
+  }
+}
+@media (max-width: 650px) {
+  .orderPageContainer {
+    height: calc(100% - 13.8rem);
+  }
+  .orderPageContainer h1 {
+    font-size: 3rem;
+  }
+  .orderItemContainer {
+    padding: 0.6rem;
+    column-gap: 1.4rem;
+  }
+  .orderBox {
+    width: 100%;
+    margin-top: 4rem;
+  }
+  .sectionInfo {
+    width: 85%;
+  }
+  .sectionInfo div p {
+    font-size: 1.3rem;
+    margin: 0.6rem 0 0.4rem 0;
+  }
+  .sectionInfo div h3 {
+    font-size: 1.3rem;
+    /* margin: 1rem 0 0.6rem 0; */
+  }
+  .sectionAction {
+    font-size: 1.4rem;
+    padding: 0.3rem;
+    margin-left: 0.5rem;
+  }
+}

@@ -1,0 +1,126 @@
+.loginPageContainer {
+  background-image: url(../assets/cakeDesktopMock.jpg);
+  width: 100vw;
+  height: calc(100% - 14.8rem);
+  position: fixed;
+  top: 4.8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 17%;
+}
+.signUpContainer,
+.signInContainer {
+  text-align: center;
+  margin-top: 8rem;
+  color: var(--textWhite);
+}
+.signUpContainer form,
+.signInContainer form {
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+}
+
+.signUpContainer h1,
+.signInContainer h1 {
+  font-size: 4rem;
+  margin-bottom: -1rem;
+}
+.signUpContainer h2,
+.signInContainer h2 {
+  font-size: 3rem;
+  margin: 2rem 0 2rem 0;
+}
+.signUpContainer form input,
+.signInContainer form input {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  padding-left: 0.4rem;
+}
+.signUpContainer form input::placeholder,
+.signInContainer form input::placeholder {
+  color: rgba(87, 185, 188, 0.7);
+}
+.gBtn {
+  font-size: 2.4rem;
+  color: var(--textWhite);
+  margin-top: 1rem;
+  background-color: var(--primary);
+  padding: 0.6rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  outline: 2px solid var(--textWhite);
+  outline-offset: 2px;
+  cursor: pointer;
+}
+.gLogo {
+  height: 2.4rem;
+  padding-right: 0.7rem;
+}
+@media (max-width: 1200px) {
+  .ketoBack h2 {
+    font-size: 5rem;
+    margin: 6rem 0 0 2rem;
+  }
+}
+@media (max-width: 850px) {
+  .ketoBack h2 {
+    font-size: 4rem;
+    margin: 4rem 0 0 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .loginPageContainer {
+    height: calc(100% - 13.8rem);
+    background-image: url(../assets/cakeMOBILEmockup.jpg);
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+  }
+  .signUpContainer {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .signInContainer {
+    text-align: center;
+    margin-top: 12rem;
+  }
+  .signUpContainer h1,
+  .signInContainer h1 {
+    font-size: 3rem;
+    margin-bottom: -1rem;
+  }
+  .signUpContainer h2,
+  .signInContainer h2 {
+    font-size: 2rem;
+    margin: 1.2rem 0 1.6rem 0;
+  }
+  .gBtn {
+    font-size: 2rem;
+    color: var(--textWhite);
+    margin-top: 1rem;
+    padding: 0.4rem;
+  }
+
+  .gLogo {
+    height: 2.4rem;
+    padding-right: 0.7rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .signUpContainer h2,
+  .signInContainer h2 {
+    font-size: 1.6rem;
+    margin: 1.2rem 0 1.6rem 0;
+  }
+}
